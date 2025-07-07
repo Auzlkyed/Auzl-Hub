@@ -40,4 +40,3 @@ getgenv().AuzHubConfig = {
     ["AutoBuyHoneyShopDelaySeconds"] = 1, ["Anti-AFK"] = true, ["Auto Max Zoom"] = true,
     ["Boost FPS"] = false,
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubGrowAGardenKaitun.lua"))()
