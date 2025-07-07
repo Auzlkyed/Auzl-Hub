@@ -1,41 +1,43 @@
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+getgenv().AuzHubConfig = {
+    ["AutoCollect"] = true,
+    ["AutoPlant"] = true,
+    ["AutoDestroy"] = false,
+    ["SellThreshold"] = 1,
+    ["PlantsToDestroy"] = {
+        ["Daffodil"] = false, ["Coconut"] = false, ["Tomato"] = false, ["Apple"] = false,
+        ["Blueberry"] = false, ["Strawberry"] = false, ["Watermelon"] = false, ["Mushroom"] = false,
+        ["Pumpkin"] = false, ["Pepper"] = false, ["Cacao"] = false, ["Corn"] = false,
+        ["Dragon Fruit"] = false, ["Orange Tulip"] = false, ["Carrot"] = false, ["Mango"] = false,
+        ["Cactus"] = false, ["Beanstalk"] = false, ["Grape"] = false, ["Bamboo"] = false
+    },
+    ["AutoBuySeed"] = true,
+    ["SelectSeed"] = {
+        ["Carrot"] = true, ["Strawberry"] = true, ["Blueberry"] = true, ["Orange Tulip"] = true,
+        ["Tomato"] = true, ["Corn"] = true, ["Daffodil"] = true, ["Watermelon"] = true,
+        ["Pumpkin"] = true, ["Apple"] = true, ["Bamboo"] = true, ["Coconut"] = true,
+        ["Cactus"] = true, ["Dragon Fruit"] = true, ["Mango"] = true, ["Grape"] = true,
+        ["Mushroom"] = true, ["Pepper"] = true, ["Cacao"] = true, ["Beanstalk"] = true
+    },
+    ["AutoBuySeed_UseCustomDelay"] = false,
+    ["AutoBuySeed_CustomDelaySeconds"] = 1,
+    ["AutoBuySelectedGear"] = false,
+    ["SelectedGearToBuy"] = {
+        ["Trowel"] = false, ["Watering Can"] = false, ["Basic Sprinkler"] = false,
+        ["Advanced Sprinkler"] = false, ["Godly Sprinkler"] = false, ["Lightning Rod"] = false,
+        ["Master Sprinkler"] = false, ["Harvest Tool"] = false
+    },
+    ["AutoBuyGearDelaySeconds"] = 1, ["LastEnteredJobId"] = "",
+    ["AutoSubmitPollinatedFruit"] = false, ["AutoSubmitPollinatedDelaySeconds"] = 10,
+    ["AutoBuyHoneyShopItems"] = false,
+    ["SelectedHoneyShopItemsToBuy"] = {
+        ["Flower Seed Pack"] = false, ["Nectarine"] = false, ["Hive Fruit"] = false,
+        ["Honey Sprinkler"] = false, ["Bee Egg"] = false, ["Bee Crate"] = false,
+        ["Honey Comb"] = false, ["Bee Chair"] = false, ["Honey Torch"] = false, ["Honey Walkaway"] = false
+    },
+    ["AutoBuyHoneyShopDelaySeconds"] = 1, ["Anti-AFK"] = true, ["Auto Max Zoom"] = true,
+    ["Boost FPS"] = false,
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubGrowAGardenKaitun.lua"))()
